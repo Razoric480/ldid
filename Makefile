@@ -38,7 +38,7 @@ all: ldid
 	$(CC) $(CFLAGS) -o $@ -c $^ -I.
 
 %.cpp.o: %.cpp
-	$(CXX) $(CXXFLAGS) -std=c++0x -o $@ -c $^ -I.
+	$(CXX) $(CXXFLAGS) -std=c++0x -o $@ -c $^
 
 ldid: $(LDID_OBJS)
 	$(CXX) $(CFLAGS) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
